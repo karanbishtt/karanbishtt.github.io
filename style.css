@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(180deg, #020617, #0f172a);
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #cbd5f5;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.hero-buttons a {
+  padding: 12px 26px;
+  border-radius: 6px;
+  margin: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #38bdf8;
+  color: #020617;
+}
+
+.hero-buttons .outline {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+section h2 {
+  color: #38bdf8;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.skill-box {
+  background-color: #020617;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* EXPERIENCE */
+.card {
+  background-color: #020617;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.card span {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #020617;
+  padding: 25px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* CERTIFICATES */
+.cert-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cert-list li {
+  margin-bottom: 12px;
+}
+
+/* CONTACT */
+#contact a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background-color: #020617;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  section {
+    padding: 50px 15px;
+  }
+}
