@@ -4,138 +4,128 @@
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, sans-serif;
-  background-color: #0b0f19;
-  color: #e5e7eb;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: #f8fafc;
+  color: #1f2937;
   line-height: 1.6;
-}
-
-/* NAV */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 18px 40px;
-  background-color: #0b0f19;
-  position: sticky;
-  top: 0;
-}
-
-.nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #c7d2fe;
 }
 
 /* HERO */
 .hero {
-  text-align: center;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
   padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-box {
+  background: white;
+  padding: 50px;
+  border-radius: 18px;
+  max-width: 850px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero h3 {
   color: #6366f1;
+  margin-bottom: 15px;
 }
 
-.hero-role {
-  color: #22d3ee;
-  font-weight: 600;
+.hero-actions {
+  margin-top: 30px;
 }
 
-.hero-desc {
-  max-width: 700px;
-  margin: 20px auto;
-  color: #cbd5f5;
-}
-
-/* BUTTONS */
 .btn-primary {
   background-color: #6366f1;
   color: white;
-  padding: 12px 26px;
-  border-radius: 6px;
+  padding: 12px 28px;
+  border-radius: 8px;
   text-decoration: none;
-  margin: 5px;
-  display: inline-block;
+  margin-right: 10px;
 }
 
-.btn-secondary {
+.btn-outline {
   border: 2px solid #6366f1;
   color: #6366f1;
-  padding: 12px 26px;
-  border-radius: 6px;
+  padding: 12px 28px;
+  border-radius: 8px;
   text-decoration: none;
-  margin: 5px;
 }
 
 /* SECTIONS */
-section {
+.section {
+  padding: 80px 20px;
   max-width: 1100px;
   margin: auto;
-  padding: 70px 20px;
 }
 
-h2 {
-  color: #6366f1;
+.light-bg {
+  background-color: #eef2ff;
+  border-radius: 20px;
+}
+
+/* TEXT */
+.section h2 {
+  font-size: 2rem;
   margin-bottom: 25px;
+  color: #4338ca;
 }
 
-/* CARDS */
+.section-text {
+  max-width: 800px;
+}
+
+/* GRIDS */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
 }
 
-.box {
-  background-color: #111827;
+.card, .project-card, .cert-card {
+  background: white;
   padding: 25px;
-  border-radius: 10px;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
-.box span {
-  font-size: 0.85rem;
-  color: #94a3b8;
-}
-
-/* LINKS */
-.link {
-  color: #22d3ee;
+.project-card a,
+.cert-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4338ca;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 500;
 }
 
 /* CERTIFICATES */
-.cert-list {
-  list-style: none;
-  padding: 0;
-}
-
-.cert-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.btn-small {
-  background-color: #22d3ee;
-  color: #0b0f19;
-  padding: 6px 14px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 0.85rem;
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 25px;
-  color: #9ca3af;
+  padding: 30px;
+  background-color: #6366f1;
+  color: white;
+  margin-top: 60px;
 }
 
 /* RESPONSIVE */
 @media (max-width: 600px) {
+  .hero-box {
+    padding: 35px;
+  }
+
   .hero h1 {
     font-size: 2.2rem;
   }
