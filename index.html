@@ -6,20 +6,20 @@
 
   <title>Karan Singh Bisht | Portfolio</title>
 
-  <!-- Font Awesome Icons -->
+  <!-- Icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   />
 
-  <!-- CSS (cache busting ON) -->
-  <link rel="stylesheet" href="style.css?v=3">
+  <!-- CSS (CACHE BUSTING ON PURPOSE) -->
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
+  <nav class="navbar fade-down">
     <div class="container nav-flex">
       <h2 class="logo">Karan.</h2>
       <div class="nav-links">
@@ -35,7 +35,7 @@
   <section class="hero">
     <div class="container hero-grid">
 
-      <div class="hero-text">
+      <div class="hero-text fade-up">
         <h1>Karan Singh Bisht</h1>
         <h3>B.Tech Computer Science Engineering Student</h3>
         <p>
@@ -50,8 +50,7 @@
         </div>
       </div>
 
-      <div class="hero-image">
-        <!-- Replace src with your photo -->
+      <div class="hero-image fade-left">
         <img src="assets/profile.jpg" alt="Karan Singh Bisht">
       </div>
 
@@ -59,7 +58,7 @@
   </section>
 
   <!-- ABOUT -->
-  <section class="section" id="about">
+  <section class="section fade-up" id="about">
     <div class="container">
       <h2>About Me</h2>
       <div class="card">
@@ -75,7 +74,7 @@
   </section>
 
   <!-- SKILLS -->
-  <section class="section light" id="skills">
+  <section class="section light fade-up" id="skills">
     <div class="container">
       <h2>Skills</h2>
 
@@ -108,24 +107,24 @@
   </section>
 
   <!-- PROJECTS -->
-  <section class="section" id="projects">
+  <section class="section fade-up" id="projects">
     <div class="container">
       <h2>Projects</h2>
 
       <div class="grid">
-        <div class="card">
+        <div class="card project-card">
           <h3>Pet Classification</h3>
           <p>CNN-based image classification using TensorFlow.</p>
           <a href="https://github.com/karanbishtt/pet-classification-tensorflow">View on GitHub</a>
         </div>
 
-        <div class="card">
+        <div class="card project-card">
           <h3>Spam Detection</h3>
           <p>NLP-based spam message classification.</p>
           <a href="https://github.com/karanbishtt/spam-detection-tensorflow">View on GitHub</a>
         </div>
 
-        <div class="card">
+        <div class="card project-card">
           <h3>Object Detection</h3>
           <p>Object detection using TensorFlow models.</p>
           <a href="https://github.com/karanbishtt/object-detection-tensorflow">View on GitHub</a>
@@ -135,22 +134,22 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="section light" id="contact">
+  <section class="section light fade-up" id="contact">
     <div class="container">
       <h2>Contact</h2>
 
       <div class="card contact-card">
-        <p><i class="fa-solid fa-envelope"></i> bishtsinghk@gmail.com</p>
+        <p><a href="bishtsinghk@gmail.com"><i class="fa-solid fa-envelope"></i> bishtsinghk@gmail.com</p>
         <p>
           <a href="https://github.com/karanbishtt"><i class="fa-brands fa-github"></i> GitHub</a>
           &nbsp; | &nbsp;
-          <a href="https://www.linkedin.com/in/karan-singh-bisht-309b81336?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://www.linkedin.com/in/karan-singh-bisht-309b81336?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
         </p>
       </div>
     </div>
   </section>
 
-  <footer>
+  <footer class="fade-up">
     © 2026 Karan Singh Bisht
   </footer>
 
